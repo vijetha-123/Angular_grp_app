@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { SignupComponent } from './signup/signup.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
