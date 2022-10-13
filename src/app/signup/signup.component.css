@@ -1,0 +1,32 @@
+h1 {
+    font-size: 50px;
+    font-family:"Playfair Display",serif;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 2px ;
+}
+
+.signbox{
+   margin-left: 33%;
+    height: 250px;
+    width: 600px;
+    border: none;
+  box-shadow: 5px 10px 8px #d1cece;
+}
+.space{
+    padding: 50px 50px 50px 50px;
+}
+
+.chat{
+    padding: 10px 10px 10px 10px;
+    border:solid;
+    letter-spacing: 2px;
+    width: 100px;
+}
+.chat:hover{
+    cursor: pointer;
+    background-color:#dc2b0c;
+   color :white;
+   border: none;
+}
