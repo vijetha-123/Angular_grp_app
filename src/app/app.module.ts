@@ -8,7 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SignupComponent } from './signup/signup.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { CommonModule } from '@angular/common';
-import { PartnersComponent } from './partners/partners.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +18,6 @@ import { PartnersComponent } from './partners/partners.component';
     FooterComponent,
     SignupComponent,
     SubscribeComponent,
-    PartnersComponent
   ],
   imports: [
     BrowserModule,
