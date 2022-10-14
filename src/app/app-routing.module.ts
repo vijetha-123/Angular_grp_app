@@ -7,7 +7,7 @@ import { WorkComponent } from './work/work.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ServiceComponent } from './service/service.component';
-
+import { AboutUsComponent } from './about-us/about-us.component';
 
 const routes: Routes = [
     {path:'Contact',component:ContactComponent},
@@ -16,7 +16,8 @@ const routes: Routes = [
     { path: 'work',component:WorkComponent},
     { path: 'footer', component:FooterComponent},
     { path: '', component:HomeComponent},
-    { path: 'service', component:ServiceComponent}
+    { path: 'service', component:ServiceComponent},
+    {path : 'aboutus',component:AboutUsComponent}
 ];
 
 @NgModule({
