@@ -5,15 +5,17 @@ import { SignupComponent } from './signup/signup.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { WorkComponent } from './work/work.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
-  
-     {path:'Contact',component:ContactComponent},
-     { path:'sign', component:SignupComponent},
-     { path:'subscribe',component:SubscribeComponent},
-     { path: 'work',component:WorkComponent},
-     { path: 'footer', component:FooterComponent}
+    {path:'Contact',component:ContactComponent},
+    { path:'sign', component:SignupComponent},
+    { path:'subscribe',component:SubscribeComponent},
+    { path: 'work',component:WorkComponent},
+    { path: 'footer', component:FooterComponent},
+    { path: '', component:HomeComponent}
+
 ];
 
 @NgModule({
