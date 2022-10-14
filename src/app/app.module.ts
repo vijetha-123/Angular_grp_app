@@ -8,7 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SignupComponent } from './signup/signup.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { CommonModule } from '@angular/common';
-
+import { BlogComponent } from './blog/blog.component';
 @NgModule({
   declarations: [
     AppComponent,
