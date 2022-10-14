@@ -41,7 +41,6 @@ h3{
     font-size: 50px;
     font-family: "Playfair Display",serif;
     font-weight: 900;
-    letter-spacing: 1.7px;
     line-height: 1.25;
 }
 
@@ -54,7 +53,8 @@ p{
 }
 
 .banner-text{
-    margin-left:50px;
+    margin-left:90px;
+    letter-spacing: .9px;
 }
 
 section{
@@ -72,5 +72,21 @@ section{
     border: 3px solid black;
     position: absolute;
     margin-top:-770px;
-    padding:50px;
+    padding:30px;
+}
+
+.partners-logo{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.partners-logo .row .col{
+    padding: 24px 16px;
+}
+.partners-logo .row .col .card .card-img-top{
+    filter: grayscale(100%);
+    opacity: .4;
+}
+.card{
+    border:none;
 }

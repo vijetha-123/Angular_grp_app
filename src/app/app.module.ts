@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SignupComponent } from './signup/signup.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { CommonModule } from '@angular/common';
+import { PartnerComponent } from './partner/partner.component';
 
 
 @NgModule({
@@ -18,6 +19,8 @@ import { CommonModule } from '@angular/common';
     FooterComponent,
     SignupComponent,
     SubscribeComponent,
+    PartnerComponent,
+    
   ],
   imports: [
     BrowserModule,

@@ -5,8 +5,7 @@ import { SignupComponent } from './signup/signup.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { WorkComponent } from './work/work.component';
 import { FooterComponent } from './footer/footer.component';
-import { PartnersComponent } from './partners/partners.component';
-
+import { PartnerComponent } from './partner/partner.component';
 
 const routes: Routes = [
   
@@ -15,7 +14,7 @@ const routes: Routes = [
      { path:'subscribe',component:SubscribeComponent},
      { path:'work',component:WorkComponent},
      { path:'footer', component:FooterComponent},
-     { path:'partner', component:PartnersComponent}
+     { path:'partner', component:PartnerComponent}
 ];
 
 @NgModule({
