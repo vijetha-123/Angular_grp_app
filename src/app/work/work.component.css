@@ -188,7 +188,7 @@ h5{
     color: #ff7d55; 
 }
 
-section{
+.section_sec{
     border:2px solid white;
     height:500px;
     margin: 20px;
@@ -240,7 +240,43 @@ hr {
     
 }
 
-.toggle_span{
-        
+
+.partners-head h2{
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 1.7px;
+    margin: 40px 0px;
+    font-weight: 600;
+}
+.partners-logo{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.partners-logo .row .col{
+    padding: 24px 16px;
+}
+.partners-logo .row .col .card .card-img-top{
+    filter: grayscale(100%);
+    opacity: .4;
+}
+.meetpartner-btn{
+    /* width: 230px; */
+    text-align: center;
+    margin-top:60px;
+    margin-bottom:40px ;
+}
+.meetpartner-btn a{
+    border: 3px solid;
+    padding:10px 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+}
+.meetpartner-btn a:hover{
+    color: rgb(248, 248, 244);
+    border-color: #c73e14;
+    background-color: #c73e14;
 }
   
