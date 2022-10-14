@@ -5,7 +5,7 @@ import { SignupComponent } from './signup/signup.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { WorkComponent } from './work/work.component';
 import { FooterComponent } from './footer/footer.component';
-import { BlogComponent } from './blog/blog.component';
+import {BlogComponent} from './blog/blog.component';
 
 
 const routes: Routes = [
