@@ -6,6 +6,7 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
 import { WorkComponent } from './work/work.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
     { path:'subscribe',component:SubscribeComponent},
     { path: 'work',component:WorkComponent},
     { path: 'footer', component:FooterComponent},
-    { path: '', component:HomeComponent}
+    { path: '', component:HomeComponent},
+    {path : 'blog', component:BlogComponent}
 
 ];
 
