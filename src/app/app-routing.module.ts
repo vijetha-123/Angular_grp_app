@@ -6,6 +6,7 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
 import { WorkComponent } from './work/work.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { ServiceComponent } from './service/service.component';
 
 
 const routes: Routes = [
@@ -14,8 +15,8 @@ const routes: Routes = [
     { path:'subscribe',component:SubscribeComponent},
     { path: 'work',component:WorkComponent},
     { path: 'footer', component:FooterComponent},
-    { path: '', component:HomeComponent}
-
+    { path: '', component:HomeComponent},
+    { path: 'service', component:ServiceComponent}
 ];
 
 @NgModule({
