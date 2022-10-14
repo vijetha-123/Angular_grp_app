@@ -6,7 +6,7 @@ import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { SignupComponent } from './signup/signup.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
-import { CommonModule } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { CommonModule } from '@angular/common';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
