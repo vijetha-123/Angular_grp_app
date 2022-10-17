@@ -9,6 +9,9 @@ import { SignupComponent } from './signup/signup.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
+import { ReactiveFormsModule} from '@angular/forms';
+import { FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,69 +1,70 @@
+<form [formGroup]="contactForm" (ngSubmit)="submitHandler()">
 <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen modal-dialog-scrollable disp" style="max-width: 80%;">
       <br>
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
-
     <div class="modal-content">
-      
- 
       <div class="modal-body">
           <h4 class="modal-title" id="myModalLabel">Let's create something<br> better together.</h4>
 <br>
       <div>If you prefer phones, we have one of those too:<p style="color: rgb(211, 211, 31);">1-888-606-7339</p></div><br/><br/>
       <label>First Name</label>
       <label style="margin-left: 32%">Last Name</label><br>
-      <input type="text" style="background-color:#153e35 ;">
-      <input type="text" style="background-color:#153e35 ;margin-left: 20%">
+      <input type="text" style="background-color:#153e35 ;" name="Firstname" formControlName="Firstname" >
+      <label class="error ng-binding" *ngIf="submitted && f['Firstname'].invalid">name is required</label>
+      <input type="text" style="background-color:#153e35 ;margin-left: 20%"  name="lastname" formControlName="lastname" >
+      <label class="error ng-binding" *ngIf="submitted && f['lastname'].invalid">name is required</label>
       <br>
       <br>
       <br>
       <label>Email</label>
       <label style="margin-left: 36%">Company Name</label><br>
-      <input type="email" style="background-color:#153e35 ;">
-      <input type="text" style="background-color:#153e35 ;margin-left: 20%"> 
+      <input type="email" style="background-color:#153e35 ;"   name="email" formControlName="email" >
+      <label class="error ng-binding" *ngIf="submitted && f['email'].invalid">name is required</label>
+      <input type="text" style="background-color:#153e35 ;margin-left: 20%"    name="company" formControlName="company" > 
+      <label class="error ng-binding" *ngIf="submitted && f['company'].invalid">name is required</label>
       <br>
       <br>
       <br>
       <label>Website URL</label>
       <label style="margin-left: 31%">Phone Number</label><br>
-      <input type="email" style="background-color:#153e35 ;">
-      <input type="text" style="background-color:#153e35 ;margin-left: 20%">
+      <input type="email" style="background-color:#153e35 ;"  name="website" formControlName="website" ><br>
+      <label class="error ng-binding" *ngIf="submitted && f['website'].invalid">name is required</label>
+      <input type="text" style="background-color:#153e35 ;margin-left: 20%"   name="phone" formControlName="phone" >
+      <label class="error ng-binding" *ngIf="submitted && f['phone'].invalid">name is required</label>
       <br>
       <br>
       <br>
       <label>How Did You Hear About Us?</label> <br>
-      <input size="88" type="text" placeholder="Please select">
-      
+      <input size="88" type="text" placeholder="Please select"  name="know_us" formControlName="know_us" ><br>
+      <label class="error ng-binding" *ngIf="submitted && f['know_us'].invalid">name is required</label>
       <br>
       <br>
       <label>I'm Here Beacause...</label>  <br>   
-      <input size="88" type="text" placeholder="Please select"><br><br>
+      <input size="88" type="text" placeholder="Please select"   name="reason" formControlName="reason" ><br><br>
+      <label class="error ng-binding" *ngIf="submitted && f['reason'].invalid">name is required</label>
       <p>
           Message</p>
-        <p>Anything else we need to know? For example: what's your biggest challenge with your site? <br/>What's your deadline?
-
+        <p>Anything else we need to know? For example: what's your biggest challenge <br>with your site? What's your deadline?
       </p>
-      <textarea rows="7" cols="90"></textarea><br>
+      <textarea rows="7" cols="90"   name="message" formControlName="message" ></textarea><br>
+      <label class="error ng-binding" *ngIf="submitted && f['message'].invalid">name is required</label><br>
       <i class="fa fa-plus" aria-hidden="true"></i>
       Add Attachment<br><br>
       <input type="file" id="fileUpload" /><br>
       <br>
       <br>
-      
-      <button type="button" style="margin-right:70%;font-family:Arial, Helvetica, sans-serif;
+      <button type="submit" style="margin-right:70%;font-family:Arial, Helvetica, sans-serif;
       font-size: 2rem;
       font-weight: 800;
       letter-spacing: 3.5px;
-      line-height: 1.31;">Submit</button>
+      line-height: 1.31;" href="#">Submit</button>
       </div>
     </div>
   </div>
 </div>
-
-
-
+</form>
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-
           <div class="container-fluid">
             <img src="/assets/logo/kanopi-logo.gif">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,12 +84,10 @@
                 <li class="nav-item">
                   <a class="nav-link active" routerLink="aboutus">About us</a>
                 </li>
-                
                 <li class="nav-item ">
                   <a class="nav-link active contact"data-bs-toggle="modal" data-bs-target="#exampleModal" routerLink="Contact" >Contact Us</a>
                 </li>
               </ul>
-              
             </div>
           </div>   
   </nav>
