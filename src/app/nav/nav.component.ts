@@ -33,7 +33,7 @@ submitHandler(){
     return;
   }
   this.http.post<any>(this.url, this.contactForm.value).subscribe(res=>{
-    const Toast=Swal.mixin({
+    const Toast = Swal.mixin({
       toast: true,
       position:'top',
       showConfirmButton: false,
