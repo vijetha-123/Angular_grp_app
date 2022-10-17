@@ -1,90 +1,113 @@
-.service-poster{
+* {
+    box-sizing: border-box;
+}
+
+.service-page {
+    max-width: 100%;
+}
+
+.service-poster {
     position: relative;
 }
-.service-img1{
+
+
+.service-img1 {
     width: 1240px;
 }
-.head1{
+
+.head1 {
     position: absolute;
-    top: 120px; 
-    left: 580px; 
-    color: #fff; 
+    top: 120px;
+    left: 580px;
+    color: #fff;
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 1.9px;
 }
-.tagline{
+
+.tagline {
     position: absolute;
     bottom: 130px;
     left: 230px;
     font-size: 55px;
     color: #fff;
-    font-family: "Playfair Display",serif;
+    font-family: "Playfair Display", serif;
     font-weight: 900;
     letter-spacing: 1.4px;
 }
-.service-img1{
+
+.service-img1 {
     margin: 5px 10px;
     border-radius: 0 0 0 100px;
     color: #fff;
 }
+
 .img-container:before {
     background-color: rgba(48, 44, 44, 0.3);
 }
- 
-.content1-h1{
+
+.content1-h1 {
     float: left;
-    font-family: "Playfair Display",serif;
+    font-family: "Playfair Display", serif;
     font-size: 48px;
     margin-top: 30px;
     margin-left: 40px;
     font-weight: 1000;
     /* width: 25%; */
 }
-.content1-para{
+
+.content1-para {
     float: right;
     width: 55%;
     /* font-family: Montserrat,sans-serif; */
     font-size: 18px;
     opacity: 0.8;
     margin-top: 45px;
-    margin-right: 60px; 
+    margin-right: 60px;
     margin-bottom: 150px;
     letter-spacing: .9px;
     line-height: 1.6;
 }
+
 /* .content1{
     clear:right;
 } */
 
-.grid{
+.grid {
     clear: both;
     /* margin-top: 150px; */
     margin-left: 80px;
     margin-right: 80px;
     margin-bottom: 100px;
 }
-.card-container{
+
+.card-container {
     padding: 0;
 }
-.card{
+
+.card {
     border: none;
-    border-radius: 0;  
+    border-radius: 0;
 }
-.row1 .card-container .card{
+
+.row1 .card-container .card {
     border-bottom: 2px solid;
 }
-.card-container:nth-child(1),.card-container:nth-child(2){
+
+.card-container:nth-child(1),
+.card-container:nth-child(2) {
     border-right: 2px solid;
 }
-.card-title{
+
+.card-title {
     margin-bottom: 30px;
-    font-size:1.5rem;
-    font-family: "Playfair Display",serif;
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;
     font-weight: 700;
     letter-spacing: 1.6px;
 }
-.card-text{
+
+.card-text {
     height: 180px;
     margin-bottom: 60px;
     letter-spacing: .9px;
@@ -92,54 +115,212 @@
     font-weight: 350;
     font-size: 1.1rem;
 }
-.card-body{
+
+.card-body1 {
     padding: 30px;
 }
-.card-body a{
+
+.card-body a {
     padding-right: 40px;
     text-decoration: none;
     color: black;
 }
-.card-body h5{
+
+.card-body .card-link h5 {
+    float: left;
     font-weight: 600;
+    width: 75%;
     letter-spacing: .7px;
 }
 
+.card-anchor:hover .card-link-text {
+    color: #c73e14;
+}
 
-.partners-head h2{
+.icon-arrow {
+    position: relative;
+    left: 40px;
+    transition: margin-left 0.3s;
+}
+
+.card-anchor:hover .card-link .icon-arrow {
+    margin-left: 20px;
+}
+
+
+/* Our Work */
+.case-studies {
+    margin: 0 60px;
+}
+
+.our-work-heading h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    letter-spacing: 1.7px;
+    line-height: 1.25;
+    margin-bottom: 30px;
+}
+
+.case-studies-card .row .col-sm-6 {
+    padding: 0;
+}
+
+.case-studies-card .row .col-sm-6 .card .card-body {
+    padding: 0;
+}
+
+.case-studies-card-img img {
+    max-width: 100%;
+}
+
+/* .cs-img4{
+    height: 408.9px;
+} */
+
+
+/* Image Overlay effect */
+.case-studies-card-img {
+    position: relative;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+
+.overlay-content-text {
+    color: #fff;
+}
+
+.case-studies-card-link:hover .overlay-image {
+    opacity: 0.8;
+}
+
+/*  */
+
+
+/* Plus Button */
+ 
+.btn-wrapper .btn-plus {
+    height: 60px;
+    width: 60px;
+    float: right;
+    margin-right:25px;
+    overflow: hidden;
+    background: #ff7d55;
+    border-radius: 50px;
+    transition: all 0.3s ease-out;
+}
+.case-studies-card-link:hover .btn-plus{
+    width:310px;
+    color: #64200b; 
+}
+.btn-wrapper .btn-plus .plus-icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+    color: aliceblue;
+}
+ 
+.btn-wrapper .btn-plus i{
+    font-size: 15px;
+    line-height: 60px;
+}
+.btn-wrapper .btn-plus span{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 60px;
+    color: aliceblue;
+}
+
+/*  */
+
+
+.case-studies-card-content {
+    margin-top: 50px;
+    padding-left: 60px;
+}
+
+.case-studies-card-content h5 {
+    font-size: .875rem;
+    letter-spacing: 1.5px;
+}
+
+.case-studies-card-content h1 {
+    font-family: "Playfair Display";
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    line-height: 1.38;
+}
+
+.more-work-btn {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+
+
+.partners-head h2 {
     font-size: 32px;
     text-align: center;
     letter-spacing: 1.7px;
     margin: 40px 0px;
     font-weight: 600;
 }
-.partners-logo{
+
+.partners-logo {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
-.partners-logo .row .col{
+
+.partners-logo .row .col {
     padding: 24px 16px;
 }
-.partners-logo .row .col .card .card-img-top{
+
+.partners-logo .row .col .card .card-img-top {
     filter: grayscale(100%);
     opacity: .4;
 }
-.meetpartner-btn{
+
+.meetpartner-btn {
     /* width: 230px; */
     text-align: center;
-    margin-top:60px;
-    margin-bottom:40px ;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
-.meetpartner-btn a{
-    border: 3px solid;
-    padding:10px 25px;
+
+.meetpartner-btn a,
+.more-work-btn a {
+    border: 2px solid;
+    padding: 10px 25px;
     text-decoration: none;
     color: black;
     font-weight: bold;
     letter-spacing: 1.3px;
 }
-.meetpartner-btn a:hover{
+
+.meetpartner-btn a:hover,
+.more-work-btn a:hover {
     color: rgb(248, 248, 244);
     border-color: #c73e14;
     background-color: #c73e14;

@@ -14,6 +14,8 @@ import { ReactiveFormsModule} from '@angular/forms';
 import { FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BlogComponent } from './blog/blog.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +35,8 @@ import { BlogComponent } from './blog/blog.component';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
