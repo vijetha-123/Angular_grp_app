@@ -24,9 +24,8 @@ contactForm = new FormGroup({
   message:new FormControl('')
 })
 submitted=false;
+
 constructor(private formbuilder:FormBuilder,private http:HttpClient,private router:Router) { }
-
-
 
   ngOnInit(): void {
     this.contactForm=this.formbuilder.group({
