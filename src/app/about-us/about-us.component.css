@@ -2,6 +2,7 @@
     box-sizing: inherit;
 }
 .aboutpage{
+<<<<<<< HEAD
     margin-left: 100px;
     margin-top: 200px;
 }
@@ -20,10 +21,36 @@
 .block{
     flex-wrap: nowrap;
     display: flex;
+=======
+    margin-left: 80px;
+    margin-top: 30px;
 }
+.about_h3{
+    font-family: sans-serif;
+    letter-spacing: 1.4px;
+    font-size: 14px;
+}
+.about_h1{
+    
+        font-size: 60px;
+        font-family: "Playfair Display",serif;
+        font-weight: 900;
+        letter-spacing: 1.4px;
+        line-height: 1.33;
+        margin-top: 2px;
+        margin-bottom: 10px;  
+>>>>>>> b98ab2483361d235c5683ac138c51c1bed325b69
+}
+.component--component--heading-text{
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
 .block_left{
-    font-family: Arial;
+    display: flex;
+    font-family: "playfair Display",serif;
     font-size: 60px;
+<<<<<<< HEAD
     flex-basis: 440px;
     -webkit-box-flex: 1;
     flex-grow: 1;
@@ -38,35 +65,42 @@ h2 {
     font-weight: 900;
     letter-spacing: 1.7px;
     line-height: 1.25;
+=======
+    font-weight: 900;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+>>>>>>> b98ab2483361d235c5683ac138c51c1bed325b69
+}
+.Container{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top:40px;
+    
 }
 .content1{
-    font-family: sans-serif;
-    width: 900px;
-    line-height: 1.6; 
-    letter-spacing: 1.3px;
+    height: 180px;
+    margin-bottom: 60px;
+    letter-spacing: .9px;
+    line-height: 1.63;
+    font-weight: 350;
+    font-size: 1.1rem;
+    width: 1000px;
+  
 }
 .card{
     height: 10px;
     border:none;
+<<<<<<< HEAD
 }
 .container{
     margin:80px;
     border:100%;
-}
-.icon--plus {
-    display: inline-block;
-    width: 23px;
-    height: 23px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.card_img{
-    margin-top: 5px;
-    margin-left:1px;
-    margin-right:1px;
-    height:1px;
-    width: 2px;
-    border-top-left-radius: 80px;
+=======
+    border-top-left-radius:40px;
+    
+>>>>>>> b98ab2483361d235c5683ac138c51c1bed325b69
 }
 .card-text{
     font-family: Montserrat;
@@ -75,11 +109,31 @@ h2 {
     height: 100px;
     width: 200px;
     padding-left: 50px;
+<<<<<<< HEAD
+=======
+
+}
+.card-img-top{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.tile--hiring__media {
+    position: relative;
+    width: calc(15% - 10px);
+    height: 0;
+    margin-right: 5px;
+    margin-left: 1000px;
+    padding-top: calc(15% - 10px);
+    border-radius: 20px 0;
+    background-color: #153e35;
+    z-index: 0;
+>>>>>>> b98ab2483361d235c5683ac138c51c1bed325b69
 }
 .tile--hiring {
     position: relative;
     color: #fff;
     text-align: center;
+<<<<<<< HEAD
 }
 .tile{
     width: 25%;
@@ -413,3 +467,105 @@ a {
 .block h2 {
     margin: 0;
 }
+=======
+  
+}
+
+.container{
+    border: none;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    height:none;
+    width:190px;
+    background-color: #204e21;
+}
+.btn--green {
+   margin-top:15px;
+   margin-bottom:15px;
+ padding: 1px 1px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color: #204e21;
+  border: solid;
+  border-color:white;
+  width:150px;
+}
+    
+.btn--green:hover {background-color: rgb(247, 28, 28)}
+
+.btn--green:active {
+  background-color: #1e4e20;
+ 
+  transform: translateY(4px);
+}
+.container_text{
+    color:white;
+    text-align: center;
+    margin-top: 10px;
+    font-size:24px;
+}
+.middle .button{
+    display: inline-flexbox;
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin:0 5px;
+    overflow: hidden;
+    background: #ff7d55;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    position:absolute;
+    top:120px;
+    right:20px;
+}
+
+.middle .button:hover{
+    width:150px;    
+}
+
+.middle .button .icon{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius:50px;
+    box-sizing:content-box;
+    line-height:40px;
+    color:aliceblue;
+    transition:all 0.3s ease-out;
+    padding-bottom: 3px;
+   
+}
+
+.middle .button:hover .icon{
+    background:rgb(223, 85, 47) ;
+    
+}    
+
+.middle .button .icon i{
+    font-size: 25px;
+    line-height: 40px;
+    
+}
+.middle .button span{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-left: 5px;
+    color: aliceblue;
+   
+}
+
+
+
+
+
+
+
+
+>>>>>>> b98ab2483361d235c5683ac138c51c1bed325b69
