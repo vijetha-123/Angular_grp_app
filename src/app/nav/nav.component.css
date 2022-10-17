@@ -147,3 +147,9 @@ h4 {
 label{
     column-gap: 30%;
 }
+.border-style{
+    background-color:#153e35 ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}

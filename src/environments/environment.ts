@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  contactapi:"https://localhost:7064/api/Contacts"
+  contactapi:"https://localhost:7064/api/Contacts",
+  signupApi:"http://localhost:3000/sign-up"
 };
 
 /*
