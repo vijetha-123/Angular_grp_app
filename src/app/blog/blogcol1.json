@@ -1,0 +1,31 @@
+[
+ 
+    { "bid":1 ,
+     "bimage":"https://kanopi.com/wp-content/uploads/2021/07/Kanopi-PalmSpringsRetreat-130-e1626121997174-425x275.jpg",
+     "boverline": "Design ____",
+     "bhead":"Higher Ed Website Design: 10 Trends and Tips For 2022",
+     "bauthimg":"https://kanopi.com/wp-content/uploads/2021/10/Cliff-Persaud_green-e1635190650229-150x150.jpg",
+     "bauthname":"Cliff Persaud",
+     "bauthpos":"Manager of Creative Services"
+ },
+ {
+     "bid":2 ,
+     "bimage":"https://kanopi.com/wp-content/uploads/2021/12/createherstock-2018-Mompreneur-Neosha-Gardner-13-425x275.jpg",
+     "boverline": "Design ____",
+     "bhead":"Reflecting Reality: Finding diversive and Inclusive stock images for your design ",
+     "bauthimg":"https://kanopi.com/wp-content/uploads/2021/11/Peyton-ODonoghue-e1635797371892-150x150.jpg",
+     "bauthname":"Payton O'Donoghue",
+     "bauthpos":"Visual Designer"
+ },
+ {
+     "bid":3 ,
+     "bimage":"https://kanopi.com/wp-content/uploads/2019/08/Kanopi-PalmSpringsRetreat-115-425x275.jpg",
+     "boverline": "Technical  ____",
+     "bhead":"Time to update your website? You need a website transition plan",
+     "bauthimg":"https://kanopi.com/wp-content/uploads/2019/06/Tanya-1-210x210.jpg",
+     "bauthname":"Thanya Thenfall",
+     "bauthpos":"Sales Manager"
+ }
+ 
+ ]
+ 
