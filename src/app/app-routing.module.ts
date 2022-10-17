@@ -5,9 +5,11 @@ import { SignupComponent } from './signup/signup.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { WorkComponent } from './work/work.component';
 import { FooterComponent } from './footer/footer.component';
+import { PartnerComponent } from './partner/partner.component';
 import { HomeComponent } from './home/home.component';
 import { ServiceComponent } from './service/service.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { BlogComponent } from './blog/blog.component';
 
 const routes: Routes = [
     {path:'Contact',component:ContactComponent},
@@ -17,7 +19,10 @@ const routes: Routes = [
     { path: 'footer', component:FooterComponent},
     { path: '', component:HomeComponent},
     { path: 'service', component:ServiceComponent},
-    {path : 'aboutus',component:AboutUsComponent}
+    {path : 'aboutus',component:AboutUsComponent},
+    {path : 'blog',component:BlogComponent},
+    { path:'partner', component:PartnerComponent}
+
 ];
 
 @NgModule({

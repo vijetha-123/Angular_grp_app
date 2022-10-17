@@ -128,6 +128,8 @@ li{
     width: 1000px;
 margin-left: 500px;
     height:600px ;
+    margin-left: 450px;
+    height:600px !important;
 
   }
   .btn-close{
