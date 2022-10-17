@@ -1,3 +1,27 @@
 .backg{
-    background-image: url(/assets/images/subscript.jpg) ; 
+  background-image: url(/assets/images/subscript.jpg) ; 
+  margin-top: 20px;
+  height: 550px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-repeat: no-repeat;
+  background-size: 1100px 500px;
+  background-position: center;
+  filter: brightness(70%);
+  border-radius:0px 0px 20px 0px ;
+  
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+.backg2{
+  height: 840px;
+  background-repeat: no-repeat;
+  margin-left: 70px;
+  border: solid;
+  margin-right: 70px;
 }
