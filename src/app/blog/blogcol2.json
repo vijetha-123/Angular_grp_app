@@ -1,0 +1,31 @@
+[
+ 
+    { "bid":1 ,
+     "bimage":"https://kanopi.com/wp-content/uploads/2019/08/Kanopi-PalmSpringsRetreat-113-425x275.jpg",
+     "boverline": "Technical ____",
+     "bhead":"4 Reasons for choosing an all-in-one Desing and Developing Agency",
+     "bauthimg":"https://kanopi.com/wp-content/uploads/2019/06/Anne_1024-1-120x120.jpg",
+     "bauthname":"Anne Stefanyk",
+     "bauthpos":"CEO/Founder"
+ },
+ {
+     "bid":2 ,
+     "bimage":"https://kanopi.com/wp-content/uploads/2019/08/Kanopi-PalmSpringsRetreat-115-425x275.jpg",
+     "boverline": "Design ____",
+     "bhead":"Healthcare Website Design Tips And 4 Inspiring Examples",
+     "bauthimg":"https://kanopi.com/wp-content/uploads/2019/06/Allison-v2-1-120x120.jpg",
+     "bauthname":"Alison Manley",
+     "bauthpos":"Director of Marketing and Communications"
+ },
+ {
+     "bid":3 ,
+     "bimage":"https://kanopi.com/wp-content/uploads/2020/01/34-425x275.jpg",
+     "boverline": "Technical  ____",
+     "bhead":"Drupal 7 End Of Life:A Guide To Next Steps",
+     "bauthimg":"https://kanopi.com/wp-content/uploads/2019/06/Allison-v2-1-120x120.jpg",
+     "bauthname":"Alison Manley",
+     "bauthpos":"Director of Marketing and Communications"
+ }
+ 
+ ]
+ 
