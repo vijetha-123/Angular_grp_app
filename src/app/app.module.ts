@@ -10,9 +10,10 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
 import { CommonModule } from '@angular/common';
 import { PartnerComponent } from './partner/partner.component';
 import { HomeComponent } from './home/home.component';
+import { ReactiveFormsModule} from '@angular/forms';
+import { FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { BlogComponent } from './blog/blog.component';
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,10 @@ import { BlogComponent } from './blog/blog.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
