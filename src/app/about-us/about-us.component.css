@@ -455,7 +455,7 @@ a {
     border-top-left-radius: 25px;
     height:none;
     width:190px;
-    background-color: #204e21;
+    background-color: #153e35;
 }
 .btn--green {
    margin-top:15px;
@@ -466,16 +466,16 @@ a {
   cursor: pointer;
   outline: none;
   color:white;
-  background-color: #204e21;
+  background-color: #153e35;
   border: solid;
   border-color:white;
   width:150px;
 }
     
-.btn--green:hover {background-color: rgb(247, 28, 28)}
+.btn--green:hover {background-color:rgb(148, 6, 6)}
 
 .btn--green:active {
-  background-color: #1e4e20;
+  background-color: #153e35;
  
   transform: translateY(4px);
 }
@@ -514,19 +514,15 @@ a {
     line-height:40px;
     color:aliceblue;
     transition:all 0.3s ease-out;
-    padding-bottom: 3px;
-   
+    padding-bottom: 3px;  
 }
-
 .middle .button:hover .icon{
-    background:rgb(223, 85, 47) ;
+    background:rgb(148, 6, 6);
     
 }    
-
 .middle .button .icon i{
     font-size: 25px;
     line-height: 40px;
-    
 }
 .middle .button span{
     font-size: 15px;
