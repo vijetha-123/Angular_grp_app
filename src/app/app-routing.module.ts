@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { ServiceComponent } from './service/service.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { BlogComponent } from './blog/blog.component';
+import { DsmPersnalInfoComponent } from './dsm-persnal-info/dsm-persnal-info.component';
+
+
 
 const routes: Routes = [
     { path:'sign', component:SignupComponent},
@@ -19,7 +22,8 @@ const routes: Routes = [
     { path: 'service', component:ServiceComponent},
     {path : 'aboutus',component:AboutUsComponent},
     {path : 'blog',component:BlogComponent},
-    { path:'partner', component:PartnerComponent}
+    { path:'partner', component:PartnerComponent},
+    {path: 'info', component:DsmPersnalInfoComponent}
 
 ];
 
