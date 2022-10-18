@@ -15,7 +15,6 @@ import { FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BlogComponent } from './blog/blog.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
