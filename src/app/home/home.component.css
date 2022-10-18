@@ -3,7 +3,7 @@ div,header,section, main {
 }
 body{
   font-size: 1rem;
-  color:black;
+  color: #1c1c1c;
   font-family: Montserrat,sans-serif;
   line-height: 1.5;
   background: white;
@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .site-content {
   width: 100%;
+  /* max-width: 1355px; */
   margin: 92px auto 0;
 }
 .home .site-content {
@@ -215,7 +216,9 @@ img{
   z-index: 1;
   margin-bottom: 0;
   text-align: left;
+  /* width: 50%; */
   padding: 20px;
+  /* margin-top: 75px; */
   min-height: 580px;
   margin-left: 64%;
 }
@@ -514,6 +517,7 @@ h3 {
   text-decoration: none;
   color:black;
   box-shadow: 0 8px 10px 0 rgb(28 28 28 / 20%);
+  /* will-change:box-shadow; */
 }
 .card__media {
   display: block;
@@ -537,7 +541,7 @@ h3 {
   position: absolute;
   top: -30px;
   bottom: inherit;
-  color:black;
+  color: #1c1c1c;
   font-size: .75rem;
   font-weight: 300;
   letter-spacing: .67px;
@@ -558,7 +562,7 @@ h3 {
   transition: opacity .1s ease-in .1s;
   display: inline-block;
   padding-right: 40px;
-  color:black;
+  color: #1c1c1c;
   white-space: nowrap;
   opacity: 0;
   will-change: opacity;
@@ -616,7 +620,7 @@ cite, dfn, em, i {
 }
 .card__link:focus, .card__link:hover {
   position: relative;
-  color: black;
+  color: #1c1c1c;
   box-shadow: -15px 20px 30px 0 rgb(28 28 28 / 40%);
   z-index: 1;
 }
