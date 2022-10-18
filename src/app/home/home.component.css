@@ -61,7 +61,6 @@ h1, h2, h3, h4, h5, h6 {
   width:66.2%;
   min-height: 645px;
   box-shadow: -10px 15px 40px 0 rgb(28 28 28 / 30%);
-  /* border-bottom-left-radius: 97px; */
   border-bottom-left-radius:20px;
   border-bottom-left-radius: calc(10.3896103896vw - 29.8701298701px);
   margin-top: 0.625rem;
@@ -88,7 +87,6 @@ h1{
   font-weight:900; 
   letter-spacing: 1.4px; 
   line-height: 1.15; 
-  /* width:100%; */
   margin: 0.67em 0;
   margin-inline-start: 0px; 
   margin-inline-end: 0px;
@@ -142,8 +140,6 @@ a {
   margin-right: 0;
 }
 .hero--home .hero__media {
-  /*font-size: 1rem;*/
-  /* width: 350px; */
   width: calc(62.3607305936vw - 114.7945205479px);
   transform: translateY(-50%);
   position: absolute;
@@ -194,15 +190,8 @@ img{
   width: 720px;
   margin: 0;
   right: 37.42%;
-  /*margin-top: -80px;*/
   top: 45px;
   padding: 0;
-  /* margin-top: calc(-7.3529411765vw - 44.7058823529px); */
-   /* z-index: -1; */
-  /*width: calc(100% + 24px);
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: -12px;*/
 }
 .component--split-layout__content{
   padding-left: calc(8.8235294118vw - 22.3529411765px);
@@ -502,6 +491,7 @@ h3 {
   max-width: inherit;
   margin-bottom: 30px;
   background-color:#fff;
+  border:none;
 }
 .component--page-cards .card {
   width: 25%;
