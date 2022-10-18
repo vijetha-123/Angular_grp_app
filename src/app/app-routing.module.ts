@@ -10,7 +10,6 @@ import { ServiceComponent } from './service/service.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { BlogComponent } from './blog/blog.component';
 
-
 const routes: Routes = [
     { path:'sign', component:SignupComponent},
     { path:'subscribe',component:SubscribeComponent},
@@ -21,6 +20,7 @@ const routes: Routes = [
     {path : 'aboutus',component:AboutUsComponent},
     {path : 'blog',component:BlogComponent},
     { path:'partner', component:PartnerComponent}
+
 ];
 
 @NgModule({

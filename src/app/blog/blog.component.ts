@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as loadCardsa from '../blog/blogcol1.json';
 import * as loadCardsb from '../blog/blogcol2.json';
 import * as loadCardsc from '../blog/blogcol3.json';
+
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
