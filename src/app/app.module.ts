@@ -10,11 +10,13 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
 import { CommonModule } from '@angular/common';
 import { PartnerComponent } from './partner/partner.component';
 import { HomeComponent } from './home/home.component';
+import { ReactiveFormsModule} from '@angular/forms';
+import { FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { BlogComponent } from './blog/blog.component';
 import { DsmPersnalInfoComponent } from './dsm-persnal-info/dsm-persnal-info.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule} from '@angular/common/http';
-import { FormsModule} from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,8 +35,13 @@ import { FormsModule} from '@angular/forms';
     AppRoutingModule,
     CommonModule,
     ReactiveFormsModule,
+
     HttpClientModule,
     FormsModule
+
+   
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

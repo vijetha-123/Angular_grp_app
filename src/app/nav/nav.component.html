@@ -1,69 +1,70 @@
+<form [formGroup]="contactForm" (ngSubmit)="submitHandler()">
 <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen modal-dialog-scrollable disp" >
       <br>
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
-
     <div class="modal-content">
-      
- 
       <div class="modal-body">
           <h4 class="modal-title" id="myModalLabel">Let's create something<br> better together.</h4>
 <br>
       <div>If you prefer phones, we have one of those too:<p style="color: rgb(211, 211, 31);">1-888-606-7339</p></div><br/><br/>
-      <label>First Name</label>
-      <label style="margin-left: 32%">Last Name</label><br>
-      <input type="text" style="background-color:#153e35 ;">
-      <input type="text" style="background-color:#153e35 ;margin-left: 20%">
-      <br>
-      <br>
-      <br>
-      <label>Email</label>
-      <label style="margin-left: 36%">Company Name</label><br>
-      <input type="email" style="background-color:#153e35 ;">
-      <input type="text" style="background-color:#153e35 ;margin-left: 20%"> 
-      <br>
-      <br>
-      <br>
-      <label>Website URL</label>
-      <label style="margin-left: 31%">Phone Number</label><br>
-      <input type="email" style="background-color:#153e35 ;">
-      <input type="text" style="background-color:#153e35 ;margin-left: 20%">
-      <br>
+      <div class="row">
+      <div class="col col-5">
+      <label>First Name</label><br>
+      <input type="text" class="border-style" name="Firstname" formControlName="Firstname"><br>
+      <label class="error ng-binding" *ngIf="submitted && f['Firstname'].invalid"style="color:red ;">name is required</label><br><br>
+      <label>Email</label><br>
+      <input type="email" class="border-style"   name="email" formControlName="email" ><br>
+      <label class="error ng-binding" *ngIf="submitted && f['email'].invalid"style="color:red ;">email is required</label><br><br>
+      <label>Website URL</label><br>
+      <input type="email" class="border-style"  name="website" formControlName="website" ><br>
+      <label class="error ng-binding" *ngIf="submitted && f['website'].invalid"style="color:red ;">website is required</label><br><br>
+    </div>
+    <div class="col col-5">
+      <label>Last Name</label><br>
+      <input type="text" class="border-style"  name="lastname" formControlName="lastname" ><br>
+      <label class="error ng-binding" *ngIf="submitted && f['lastname'].invalid" style="color:red ;">lastname is required</label><br><br>
+      <label>Company Name</label><br>
+      <input type="text" class="border-style"   name="company" formControlName="company"><br> 
+      <label class="error ng-binding" *ngIf="submitted && f['company'].invalid" style="color:red ;">company is required</label><br><br>
+      <label >Phone Number</label><br> 
+      <input type="text" class="border-style"   name="phone_no" formControlName="phone_no" ><br>
+      <label class="error ng-binding" *ngIf="submitted && f['phone_no'].invalid" style="color:red ;">phone number is required</label><br><br>
+    </div>
+  </div>
+      
       <br>
       <br>
       <label>How Did You Hear About Us?</label> <br>
-      <input size="88" type="text" placeholder="Please select">
-      
+      <input size="88" type="text" placeholder="Please select" class="border-style"  name="know_us" formControlName="know_us" ><br>
+      <label class="error ng-binding" *ngIf="submitted && f['know_us'].invalid" style="color:red ;">This field is required</label><br>
       <br>
       <br>
       <label>I'm Here Beacause...</label>  <br>   
-      <input size="88" type="text" placeholder="Please select"><br><br>
+      <input size="88" type="text" placeholder="Please select" class="border-style"  name="reason" formControlName="reason" ><br>
+      <label class="error ng-binding" *ngIf="submitted && f['reason'].invalid" style="color:red ;">This field is required</label><br><br>
       <p>
           Message</p>
-        <p style="font-size:15px;">Anything else we need to know? For example: what's your biggest challenge <br/>with your site? What's your deadline?
-
+        <p>Anything else we need to know? For example: what's your biggest challenge <br>with your site? What's your deadline?
       </p>
-      <textarea rows="7" cols="90"></textarea><br>
-      <i class="fa fa-plus" aria-hidden="true"></i>
-      Add Attachment<br><br>
+      <textarea rows="7" cols="90"   name="message_box" formControlName="message_box" ></textarea><br>
+      <label class="error ng-binding" *ngIf="submitted && f['message_box'].invalid" style="color:red ;">This field is required</label><br><br>
+      <div><i class="fa fa-plus" aria-hidden="true"></i>
+      Add Attachment<br><br></div>
       <input type="file" id="fileUpload" /><br>
       <br>
       <br>
-      
-      <button type="button" style="margin-right:70%;font-family:Arial, Helvetica, sans-serif;
-      font-size: 1rem;
-      font-weight: 80;
+      <button type="submit" style="margin-right:70%;font-family:Arial, Helvetica, sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
       letter-spacing: 3.5px;
-      line-height: 1;">Submit</button>
+      line-height: 1.31;" >Submit</button>
       </div>
     </div>
   </div>
 </div>
-
-
-
+</form>
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-
           <div class="container-fluid">
             <img src="/assets/logo/kanopi-logo.gif" routerLink="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,15 +86,14 @@
                   <a class="nav-link active" routerLink="aboutus" >About us</a>
 
                 </li>
-                
                 <li class="nav-item ">
                   <a class="nav-link active contact"data-bs-toggle="modal" data-bs-target="#exampleModal" >Contact Us</a>
                 </li>
               </ul>
-              
             </div>
           </div>   
   </nav>
 
+  
 
 	

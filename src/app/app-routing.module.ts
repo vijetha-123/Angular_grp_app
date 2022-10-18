@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactComponent } from './contact/contact.component';
 import { SignupComponent } from './signup/signup.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { WorkComponent } from './work/work.component';
@@ -15,7 +14,6 @@ import { DsmPersnalInfoComponent } from './dsm-persnal-info/dsm-persnal-info.com
 
 
 const routes: Routes = [
-    {path:'Contact',component:ContactComponent},
     { path:'sign', component:SignupComponent},
     { path:'subscribe',component:SubscribeComponent},
     { path: 'work',component:WorkComponent},
