@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  contactapi:"https://localhost:7064/api/Contacts",
+  signupApi:"http://localhost:3000/sign-up"
 };
 
 /*
