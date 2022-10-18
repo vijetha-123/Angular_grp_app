@@ -85,4 +85,12 @@ li{
     color: orange;
   }
 
+.click{
+    text-decoration: none;
+    color:black
+}
+
+.click:hover{
+    color:#dc2b0c;
+}
 

@@ -1,0 +1,56 @@
+body{
+    margin-top: 150px;
+    background-color: #153e35;
+    color: white;
+}
+
+.info{
+    padding-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-bottom: 100px;
+}
+
+h1{
+    font-family: "Playfair Display",serif;
+    font-weight: 1000;
+    letter-spacing: 1.4px;
+    line-height: 1.33;
+    font-size: 50px;
+}
+
+p{
+    margin-bottom: 1.5em;
+    font-weight: 400;
+    letter-spacing: .9px;
+    line-height: 1.63;
+}
+.sign{
+    padding: 10px;
+    border:solid white;
+    letter-spacing: 2px;
+    width: 200px;
+    background-color:#153e35;
+    color:white;       
+}
+
+.sign:hover{
+    cursor: pointer;
+    background-color:#dc2b0c;
+   color :white;
+   border: none;
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #153e35;
+  }
+  
+  .no-outline:focus {
+    outline:black;
+    outline-color: white;
+    outline-style: solid;
+  }

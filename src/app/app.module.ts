@@ -11,8 +11,10 @@ import { CommonModule } from '@angular/common';
 import { PartnerComponent } from './partner/partner.component';
 import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
-
-
+import { DsmPersnalInfoComponent } from './dsm-persnal-info/dsm-persnal-info.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
+import { FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,12 +25,16 @@ import { BlogComponent } from './blog/blog.component';
     SubscribeComponent,
     PartnerComponent,
     HomeComponent,
-    BlogComponent
+    BlogComponent,
+    DsmPersnalInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
