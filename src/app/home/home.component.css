@@ -499,6 +499,7 @@ h3 {
   max-width: inherit;
   margin-bottom: 30px;
   background-color:#fff;
+  border: 0;
 }
 .component--page-cards .card {
   width: 25%;
