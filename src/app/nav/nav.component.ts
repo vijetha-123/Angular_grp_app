@@ -18,10 +18,10 @@ contactForm = new FormGroup({
   email: new FormControl(''),
   company:new FormControl(''),
   website:new FormControl(''),
-  phone_no:new FormControl(''),
-  know_us:new FormControl(''),
+  phoneno:new FormControl(''),
+  knowus:new FormControl(''),
   reason:new FormControl(''),
-  message_box:new FormControl('')
+  messagebox:new FormControl('')
 })
 submitted=false;
 
@@ -34,10 +34,10 @@ constructor(private formbuilder:FormBuilder,private http:HttpClient,private rout
       email: ['', Validators.required],
       company: ['', Validators.required],
       website: ['', Validators.required],
-      phone_no: ['', Validators.required],
-      know_us: ['', Validators.required],
+      phoneno: ['', Validators.required],
+      knowus: ['', Validators.required],
       reason: ['', Validators.required],
-      message_box: ['', Validators.required]
+      messagebox: ['', Validators.required]
   });
   }
   get f(){

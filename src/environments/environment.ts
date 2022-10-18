@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   pageapi : "https://localhost:7009/api/KanopiPages",
+  //contactapi:"http://localhost:3000/contact-us",
   contactapi:"https://localhost:7064/api/Contacts",
   signupApi:"http://localhost:3000/sign-up"
 
