@@ -28,8 +28,8 @@
       <input type="text" class="border-style"   name="company" formControlName="company"><br> 
       <label class="error ng-binding" *ngIf="submitted && f['company'].invalid" style="color:red ;">company is required</label><br><br>
       <label >Phone Number</label><br> 
-      <input type="text" class="border-style"   name="phone" formControlName="phone" ><br>
-      <label class="error ng-binding" *ngIf="submitted && f['phone'].invalid" style="color:red ;">phone number is required</label><br><br>
+      <input type="text" class="border-style"   name="phone_no" formControlName="phone_no" ><br>
+      <label class="error ng-binding" *ngIf="submitted && f['phone_no'].invalid" style="color:red ;">phone number is required</label><br><br>
     </div>
   </div>
       
@@ -47,8 +47,8 @@
           Message</p>
         <p>Anything else we need to know? For example: what's your biggest challenge <br>with your site? What's your deadline?
       </p>
-      <textarea rows="7" cols="90"   name="message" formControlName="message" ></textarea><br>
-      <label class="error ng-binding" *ngIf="submitted && f['message'].invalid" style="color:red ;">This field is required</label><br><br>
+      <textarea rows="7" cols="90"   name="message_box" formControlName="message_box" ></textarea><br>
+      <label class="error ng-binding" *ngIf="submitted && f['message_box'].invalid" style="color:red ;">This field is required</label><br><br>
       <div><i class="fa fa-plus" aria-hidden="true"></i>
       Add Attachment<br><br></div>
       <input type="file" id="fileUpload" /><br>

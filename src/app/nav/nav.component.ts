@@ -16,12 +16,12 @@ contactForm = new FormGroup({
   Firstname: new FormControl(''),
   lastname: new FormControl(''),
   email: new FormControl(''),
-  phone:new FormControl(''),
   company:new FormControl(''),
   website:new FormControl(''),
+  phone_no:new FormControl(''),
   know_us:new FormControl(''),
   reason:new FormControl(''),
-  message:new FormControl('')
+  message_box:new FormControl('')
 })
 submitted=false;
 
@@ -32,12 +32,12 @@ constructor(private formbuilder:FormBuilder,private http:HttpClient,private rout
       Firstname: ['', Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)],
       lastname: ['', Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)],
       email: ['', Validators.required],
-      phone: ['', Validators.required],
       company: ['', Validators.required],
       website: ['', Validators.required],
+      phone_no: ['', Validators.required],
       know_us: ['', Validators.required],
       reason: ['', Validators.required],
-      message: ['', Validators.required]
+      message_box: ['', Validators.required]
   });
   }
   get f(){
