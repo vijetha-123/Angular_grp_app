@@ -36,12 +36,32 @@
       <br>
       <br>
       <label>How Did You Hear About Us?</label> <br>
-      <input size="88" type="text" placeholder="Please select" class="border-style"  name="knowus" formControlName="knowus" ><br>
+      <select class="form-select form-select-sm" aria-label=".form-select-sm example"  style="width:700px"class="border-style"  name="knowus" formControlName="knowus">
+        <option value="Referral by client">Referral by client</option>
+        <option value="Referral by network">Referral by network</option>
+        <option value="Google">Google</option>
+        <option value="Social Media">Social Media</option>
+        <option value="Clutch">Clutch</option>
+        <option value="Drupal.org">Drupal.org</option>
+        <option value="Acquia website">Acquia website</option>
+        <option value="Pantheon website">Pantheon website</option>
+        <option value="WPEngine website">WPEngine website</option>
+        <option value="From a top Providers list">From a top Providers list</option>
+      </select><br>
+      <!-- <input size="88" type="text" placeholder="Please select" class="border-style"  name="knowus" formControlName="knowus" ><br> -->
       <label class="error ng-binding" *ngIf="submitted && f['knowus'].invalid" style="color:red ;">This field is required</label><br>
       <br>
       <br>
       <label>I'm Here Beacause...</label>  <br>   
-      <input size="88" type="text" placeholder="Please select" class="border-style"  name="reason" formControlName="reason" ><br>
+      <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width:700px" class="border-style"  name="reason" formControlName="reason">
+        <option value="I'm a prospective client that needs support for an existing site">I'm a prospective client that needs support for an existing site</option>
+        <option value="I'm a prospective client that has a new design/development project">I'm a prospective client that has a new design/development project</option>
+        <option value="I want a job at Kanopi">I want a job at Kanopi</option>
+        <option value="I want to be a vendor for Kanopi">I want to be a vendor for Kanopi</option>
+        <option value="I have something else to discuss">I have something else to discuss</option>
+
+      </select><br>
+      <!-- <input size="88" type="text" placeholder="Please select" class="border-style"  name="reason" formControlName="reason" ><br> -->
       <label class="error ng-binding" *ngIf="submitted && f['reason'].invalid" style="color:red ;">This field is required</label><br><br>
       <p>
           Message</p>
