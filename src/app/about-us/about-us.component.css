@@ -3,7 +3,7 @@
 }
 .aboutpage{
     margin-left: 100px;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 .about_h1{
     font-size: 38px;
@@ -104,9 +104,16 @@ h2 {
 .component {
     margin-bottom: 70px;
 }
+/* Nav Tab */
+.components{
+    margin-right: 40px;
+    margin-left:30px;
+  
+}
 .page-template-template-about .component--tabs {
     padding-top: 0;
     padding-bottom: 0;
+    
 }
 .component--tabs {
     display: grid;
@@ -148,6 +155,7 @@ h2 {
     padding-left: 20px;
     background-color: black;
     grid-area: tab-nav;
+    margin-left: 30px;
 }
 .components ul, .entry-content ul, .post-content--main ul, ul.list--lined {
     margin-left: 0;
@@ -161,6 +169,9 @@ h2 {
     padding-top: 0;
     padding-bottom: 0;
     counter-reset: tab-nav-item;
+    margin-left:40px;
+   
+  
 }
 ol, ul {
     box-sizing: border-box;
@@ -190,10 +201,12 @@ ul{
     height: 2px;
     background-color:black;
     content: "";
+  
 }
 .tab-nav__link.active, .tab-nav__link:focus, .tab-nav__link:hover {
     padding-left: 90px;
     color:white;
+   
 }
 .tab-nav__link.active:before, .tab-nav__link:focus:before, .tab-nav__link:hover:before {
     background-color: white;
@@ -258,9 +271,11 @@ ul{
 .component--tabs .tabs {
     padding-bottom: 20px;
     grid-area: tabs;
+   
 }
 .tab {
     padding: 0;
+   
 }
 .accordion__item {
     box-sizing: border-box;
@@ -325,13 +340,15 @@ element.style {
     margin-bottom: 40px;
     padding-top: 0;
     padding-bottom: 0;
+    margin-left: 20px;
 }
 .tab__image {
     display: block;
-    width: 100%;
+    width: 80%;
     max-width: 100%;
     margin-bottom: 0;
     padding: 0;
+    margin-left:40px;
 }
 .tab__content h4 {
     margin: 2.5rem 0 1.875rem;
@@ -339,6 +356,7 @@ element.style {
     font-weight: 400;
     letter-spacing: 1.43px;
     line-height: 1.38;
+    margin-left:30px;
 }
 .accordion__description p {
     margin: 0.75rem 0;
@@ -355,6 +373,10 @@ a {
     margin-bottom: 0;
     float: left;
 }
+.content{
+    margin-left:120px;
+}
+/* Green Button */
 .block {
     display: flex;
     flex-wrap: nowrap;
@@ -374,10 +396,15 @@ a {
     height:none;
     width:190px;
     background-color: #153e35;
+    margin-right:0px;
+    margin-top: 2px;
+    margin-left: -4px;
+    margin-bottom: 5px;
+   
 }
 .btn--green {
-   margin-top:15px;
-   margin-bottom:15px;
+   margin-top:30px;
+   margin-bottom:30px;
  padding: 1px 1px;
   font-size: 24px;
   text-align: center;
@@ -387,6 +414,7 @@ a {
   background-color: #153e35;
   border: solid;
   border-color:white;
+  position: relative;
   width:150px;
 }
     
@@ -410,17 +438,18 @@ a {
     float: right;
     margin:0 5px;
     overflow: hidden;
-    background: #ff7d55;
+    background: #f86f46;
     border-radius: 100px;
     cursor: pointer;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    margin-right: 10px;
+    margin-right: 1px;
     position:absolute;
-    top:120px;
+    top:150px;
     right:20px;
 }
 .middle .button:hover{
-    width:150px;    
+    width:180px; 
+    background-color: #ed592b;   
 }
 .middle .button .icon{
     display: inline-block;
@@ -446,6 +475,116 @@ a {
     font-size: 15px;
     font-weight: 500;
     line-height: 40px;
+    margin-left: 20px;
+    color: aliceblue;
+}
+/* Nav Tav */
+
+/* Choose catogety */
+.facets-toggle {
+    -webkit-transition: all .2s ease-in-out 0s;
+    transition: all .2s ease-in-out 0s;
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    cursor: pointer;
+    color:black;
+   
+}
+.facets-toggle:hover{
+    color: #ff7d55;
+}
+.wrapper .button{
+    display: inline-flexbox;
+    height: 20px;
+    width: 20px;
+    float: right;
+    margin:0 5px;
+    overflow: hidden;
+    background: #ff7d55;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+
+    width:150px;    
+
+}
+.wrapper .button span{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 60px;
     margin-left: 5px;
     color: aliceblue;
 }
+.modal-content{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    background-color: rgb();
+    background-color: rgba(21,62,53,.96);
+}
+.modal{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.table{
+    color: aliceblue;
+    float: left;
+}
+.li{
+    font-size: 15px;
+    padding-bottom: 12px;
+    will-change: transform;
+}
+
+.btn_h{
+    border: 2px solid #fff;
+    color: #fff;
+    position:relative;
+}
+.btn_h:hover {
+    background:rgb(223, 85, 47) ;
+    border:none;
+   
+}
+
+.li_fl{
+    font: weight 90px;
+    font-size:25px; 
+    font-family:Playfair Display;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    line-height: 1.38;
+}
+.btn_close{
+    margin-left:1100px;
+    color:#fff   
+}
+.btn_close:hover{
+    color: #ff7d55;
+}
+
+.fa-circle-xmark{
+    height: 50px;
+    width:50px;
+}
+
+.btn_h1{
+    color: #fff;
+    position:relative;  
+}
+
+.btn_h1:hover{
+    color: #ff7d55; 
+}
+
+
