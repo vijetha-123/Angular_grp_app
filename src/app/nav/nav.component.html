@@ -11,46 +11,46 @@
       <div class="row">
       <div class="col col-5">
       <label>First Name</label><br>
-      <input type="text" style="background-color:#153e35 ;" name="Firstname" formControlName="Firstname"><br>
+      <input type="text" class="border-style" name="Firstname" formControlName="Firstname"><br>
       <label class="error ng-binding" *ngIf="submitted && f['Firstname'].invalid"style="color:red ;">name is required</label><br><br>
       <label>Email</label><br>
-      <input type="email" style="background-color:#153e35 ;"   name="email" formControlName="email" ><br>
-      <label class="error ng-binding" *ngIf="submitted && f['email'].invalid"style="color:red ;">name is required</label><br><br>
+      <input type="email" class="border-style"   name="email" formControlName="email" ><br>
+      <label class="error ng-binding" *ngIf="submitted && f['email'].invalid"style="color:red ;">email is required</label><br><br>
       <label>Website URL</label><br>
-      <input type="email" style="background-color:#153e35 ;"  name="website" formControlName="website" ><br>
-      <label class="error ng-binding" *ngIf="submitted && f['website'].invalid"style="color:red ;">name is required</label><br><br>
+      <input type="email" class="border-style"  name="website" formControlName="website" ><br>
+      <label class="error ng-binding" *ngIf="submitted && f['website'].invalid"style="color:red ;">website is required</label><br><br>
     </div>
     <div class="col col-5">
       <label>Last Name</label><br>
-      <input type="text" style="background-color:#153e35 ;"  name="lastname" formControlName="lastname" ><br>
-      <label class="error ng-binding" *ngIf="submitted && f['lastname'].invalid" style="color:red ;">name is required</label><br><br>
+      <input type="text" class="border-style"  name="lastname" formControlName="lastname" ><br>
+      <label class="error ng-binding" *ngIf="submitted && f['lastname'].invalid" style="color:red ;">lastname is required</label><br><br>
       <label>Company Name</label><br>
-      <input type="text" style="background-color:#153e35 ;"   name="company" formControlName="company"><br> 
-      <label class="error ng-binding" *ngIf="submitted && f['company'].invalid" style="color:red ;">name is required</label><br><br>
+      <input type="text" class="border-style"   name="company" formControlName="company"><br> 
+      <label class="error ng-binding" *ngIf="submitted && f['company'].invalid" style="color:red ;">company is required</label><br><br>
       <label >Phone Number</label><br> 
-      <input type="text" style="background-color:#153e35 ;"   name="phone" formControlName="phone" ><br>
-      <label class="error ng-binding" *ngIf="submitted && f['phone'].invalid" style="color:red ;">name is required</label><br><br>
+      <input type="text" class="border-style"   name="phone" formControlName="phone" ><br>
+      <label class="error ng-binding" *ngIf="submitted && f['phone'].invalid" style="color:red ;">phone number is required</label><br><br>
     </div>
   </div>
       
       <br>
       <br>
       <label>How Did You Hear About Us?</label> <br>
-      <input size="88" type="text" placeholder="Please select"  name="know_us" formControlName="know_us" ><br>
-      <label class="error ng-binding" *ngIf="submitted && f['know_us'].invalid" style="color:red ;">name is required</label><br>
+      <input size="88" type="text" placeholder="Please select" class="border-style"  name="know_us" formControlName="know_us" ><br>
+      <label class="error ng-binding" *ngIf="submitted && f['know_us'].invalid" style="color:red ;">This field is required</label><br>
       <br>
       <br>
       <label>I'm Here Beacause...</label>  <br>   
-      <input size="88" type="text" placeholder="Please select"   name="reason" formControlName="reason" ><br>
-      <label class="error ng-binding" *ngIf="submitted && f['reason'].invalid" style="color:red ;">name is required</label><br><br>
+      <input size="88" type="text" placeholder="Please select" class="border-style"  name="reason" formControlName="reason" ><br>
+      <label class="error ng-binding" *ngIf="submitted && f['reason'].invalid" style="color:red ;">This field is required</label><br><br>
       <p>
           Message</p>
         <p>Anything else we need to know? For example: what's your biggest challenge <br>with your site? What's your deadline?
       </p>
       <textarea rows="7" cols="90"   name="message" formControlName="message" ></textarea><br>
-      <label class="error ng-binding" *ngIf="submitted && f['message'].invalid" style="color:red ;">name is required</label><br><br>
-      <i class="fa fa-plus" aria-hidden="true"></i>
-      Add Attachment<br><br>
+      <label class="error ng-binding" *ngIf="submitted && f['message'].invalid" style="color:red ;">This field is required</label><br><br>
+      <div><i class="fa fa-plus" aria-hidden="true"></i>
+      Add Attachment<br><br></div>
       <input type="file" id="fileUpload" /><br>
       <br>
       <br>
@@ -58,7 +58,7 @@
       font-size: 2rem;
       font-weight: 800;
       letter-spacing: 3.5px;
-      line-height: 1.31;" data-bs-toggle="modal" data-bs-target="#exampleModal1">Submit</button>
+      line-height: 1.31;" >Submit</button>
       </div>
     </div>
   </div>
@@ -94,24 +94,6 @@
           </div>   
   </nav>
 
-  <div class="modal" id="exampleModal1" aria-labelledby="exampleModalLabel"tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        
-          <h5 class="modal-title">Let’s create something better together.</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        
-        <div class="modal-body">
-          <p>If you prefer phones, we have one of those too: 1-888-606-7339
-
-            Thank you for contacting Kanopi Studios!
-            
-            If you are interested in reaching our team right away, please call 1-888-606-7339</p>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-
+  
 
 	

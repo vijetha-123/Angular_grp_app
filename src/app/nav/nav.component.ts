@@ -23,32 +23,9 @@ contactForm = new FormGroup({
   reason:new FormControl(''),
   message:new FormControl('')
 })
-get f(){
-  return this.contactForm.controls;
-}
 submitted=false;
-submitHandler(){
-  this.submitted=true;
-  if(this.contactForm.invalid){
-    return;
-  }
-  this.http.post<any>(this.url, this.contactForm.value).subscribe(res=>{
-    const Toast = Swal.mixin({
-      toast: true,
-      position:'top',
-      showConfirmButton: false,
-      timer:3000,
-      timerProgressBar:true
-    })
-    Toast.fire({
-      icon:'success',
-      title:'you will be contacted soon'
-    })
-    this.contactForm.reset();
-    this.router.navigate(['']);
-  })
-}
-  constructor(private formbuilder:FormBuilder,private http:HttpClient,private router:Router) { }
+
+constructor(private formbuilder:FormBuilder,private http:HttpClient,private router:Router) { }
 
   ngOnInit(): void {
     this.contactForm=this.formbuilder.group({
@@ -62,5 +39,30 @@ submitHandler(){
       reason: ['', Validators.required],
       message: ['', Validators.required]
   });
+  }
+  get f(){
+    return this.contactForm.controls;
+  }
+  
+  submitHandler(){
+    this.submitted=true;
+    if(this.contactForm.invalid){
+      return;
+    }
+    this.http.post<any>(this.url, this.contactForm.value).subscribe(res=>{
+      const Toast=Swal.mixin({
+        toast: true,
+        position:'top',
+        showConfirmButton: false,
+        timer:3000,
+        timerProgressBar:true
+      })
+      Toast.fire({
+        icon:'success',
+        title:'you will be contacted soon'
+      })
+      this.contactForm.reset();
+      this.router.navigate(['']);
+    })
   }
 }

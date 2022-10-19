@@ -1,0 +1,31 @@
+[
+ 
+    { "bid":1 ,
+     "bimage":"https://kanopi.com/wp-content/uploads/2019/08/Kanopi-PalmSpringsRetreat-115-425x275.jpg",
+     "boverline": "Desing ____",
+     "bhead":"30 Best College Websites (And what makes them great)",
+     "bauthimg":"https://kanopi.com/wp-content/uploads/2019/06/Tanya-1-210x210.jpg",
+     "bauthname":"Thanya Threlfall",
+     "bauthpos":"Sales Manager"
+ },
+ {
+     "bid":2 ,
+     "bimage":"https://kanopi.com/wp-content/uploads/2020/01/34-425x275.jpg",
+     "boverline": "Technical ____",
+     "bhead":"Drupal 10 is comming soon. Here is evrything you should know",
+     "bauthimg":"https://kanopi.com/wp-content/uploads/2019/06/Jim-1-120x120.jpg",
+     "bauthname":"Jim Birch",
+     "bauthpos":"Drupal Engineering Manager"
+ },
+ {
+     "bid":3 ,
+     "bimage":"https://kanopi.com/wp-content/uploads/2020/01/34-425x275.jpg",
+     "boverline": "Technical  ____",
+     "bhead":"Drupal 8 End-Of-life And Support:What's Next?",
+     "bauthimg":"https://kanopi.com/wp-content/uploads/2019/06/Allison-v2-1-120x120.jpg",
+     "bauthname":"Alison Manley",
+     "bauthpos":"Director of Marketing and Communications"
+ }
+ 
+ ]
+ 
