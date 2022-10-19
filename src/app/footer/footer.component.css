@@ -85,4 +85,23 @@ li{
     color: orange;
   }
 
+.click{
+    text-decoration: none;
+    color:black
+}
+
+.click:hover{
+    color:#dc2b0c;
+}
+.icons{
+    float: right;
+    padding: 10px 10px 10px 10px; 
+    background-color: #153e35;
+    color: white; 
+    border-radius: 30px;
+}
+.icons:hover{
+    background-color:#dc2b0c; 
+    color: white;
+}
 

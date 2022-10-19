@@ -14,6 +14,7 @@ import { ReactiveFormsModule} from '@angular/forms';
 import { FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BlogComponent } from './blog/blog.component';
+import { DsmPersnalInfoComponent } from './dsm-persnal-info/dsm-persnal-info.component';
 
 
 @NgModule({
@@ -26,17 +27,21 @@ import { BlogComponent } from './blog/blog.component';
     SubscribeComponent,
     PartnerComponent,
     HomeComponent,
-    BlogComponent
+    BlogComponent,
+    DsmPersnalInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
     ReactiveFormsModule,
-    FormsModule,
-    HttpClientModule
+
+    HttpClientModule,
+    FormsModule
+
+   
     
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

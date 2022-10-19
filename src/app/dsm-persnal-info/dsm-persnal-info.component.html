@@ -1,0 +1,48 @@
+<body>
+<div class="info">
+
+<h1>Do Not Sell My Personal Information</h1>
+<p>Kanopi does not and has not sold any personal information in the last twelve months (or ever).
+Please see our Privacy Policy here if you’d like more information. In keeping with our respect for
+your privacy, we have no future plans to sell personal information. However, we also respect and 
+understand that you may still want to ensure your personal information is not sold. If you’d like to 
+proceed with your “do not sell my information” request, we ask that you kindly provide the following 
+information:</p>
+
+
+<div class="mt-5">
+    <div class="col-md-12 min-vh-100 d-flex flex-column">
+        <div class="login-form">
+            <form class="mt-5" [formGroup]="myForm" (ngSubmit)="submitHandler()">
+                <br>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="Firstname" formControlName="Firstname"
+                        placeholder="Enter Firstname">
+                    <label class="error ng-binding" *ngIf="submitted && f['Firstname'].invalid" style="color: red;">First Name is required
+                    </label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="Lastname" formControlName="Lastname"
+                        placeholder="Enter Lastname">
+                    <label class="error ng-binding" *ngIf="submitted && f['Lastname'].invalid" style="color: red;">Last Name is required
+                    </label>
+                   
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="Email" formControlName="Email"
+                        placeholder="Enter email">
+                    <label class="error ng-binding" *ngIf="submitted && f['Email'].invalid" style="color: red;">Email is required
+                        </label>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-warning sign">Sumbit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+
