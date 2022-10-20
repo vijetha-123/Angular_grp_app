@@ -29,12 +29,12 @@ constructor(private formbuilder:FormBuilder,private http:HttpClient,private rout
 
   ngOnInit(): void {
     this.contactForm=this.formbuilder.group({
-      Firstname: ['', Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)],
-      lastname: ['', Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)],
+      Firstname: ['', [Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(4), Validators.maxLength(8)]],
+      lastname: ['', [Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(2), Validators.maxLength(4)]],
       email: ['', Validators.required],
       company: ['', Validators.required],
       website: ['', Validators.required],
-      phoneno: ['', Validators.required],
+      phoneno: ['', [Validators.required, Validators.pattern('[0-9]*'),Validators.maxLength(10)]],
       knowus: ['', Validators.required],
       reason: ['', Validators.required],
       messagebox: ['', Validators.required]

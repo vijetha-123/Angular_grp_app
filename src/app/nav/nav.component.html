@@ -12,7 +12,7 @@
       <div class="col col-5">
       <label>First Name</label><br>
       <input type="text" class="border-style" name="Firstname" formControlName="Firstname"><br>
-      <label class="error ng-binding" *ngIf="submitted && f['Firstname'].invalid"style="color:red ;">name is required</label><br><br>
+      <label class="error ng-binding" *ngIf="submitted && f['Firstname'].invalid"style="color:red ;">Enter a valid name</label><br><br>
       <label>Email</label><br>
       <input type="email" class="border-style"   name="email" formControlName="email" ><br>
       <label class="error ng-binding" *ngIf="submitted && f['email'].invalid"style="color:red ;">email is required</label><br><br>
@@ -23,13 +23,13 @@
     <div class="col col-5">
       <label>Last Name</label><br>
       <input type="text" class="border-style"  name="lastname" formControlName="lastname" ><br>
-      <label class="error ng-binding" *ngIf="submitted && f['lastname'].invalid" style="color:red ;">lastname is required</label><br><br>
+      <label class="error ng-binding" *ngIf="submitted && f['lastname'].invalid" style="color:red ;">Enter a valid name</label><br><br>
       <label>Company Name</label><br>
       <input type="text" class="border-style"   name="company" formControlName="company"><br> 
       <label class="error ng-binding" *ngIf="submitted && f['company'].invalid" style="color:red ;">company is required</label><br><br>
       <label >Phone Number</label><br> 
       <input type="text" class="border-style"   name="phoneno" formControlName="phoneno" ><br>
-      <label class="error ng-binding" *ngIf="submitted && f['phoneno'].invalid" style="color:red ;">phone number is required</label><br><br>
+      <label class="error ng-binding" *ngIf="submitted && f['phoneno'].invalid" style="color:red ;">Enter valid phone number</label><br><br>
     </div>
   </div>
       
